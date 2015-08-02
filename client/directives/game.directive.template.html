@@ -1,4 +1,11 @@
 <div class="container">
-    {{ctrl.greeting}}
-    <img src="../images/yeoman.png" />
+    <button ng-click="ctrl.move('right')">Right </button>
+    <button ng-click="ctrl.move('down')">Down</button>
+    <button ng-click="ctrl.move('left')">Left</button>
+    <button ng-click="ctrl.move('up')">Up</button>
+    <butotn ng-click="ctrl.rotate()">Rotate</butotn>
+    <br />
+
+    <div id="game_canvas"></div>
+
 </div>
