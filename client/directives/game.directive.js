@@ -2,6 +2,11 @@
  * Created by jerzybatalinski on 2015-08-02.
  */
 module.exports = function(ngModule) {
+
+    if (ON_TEST) {
+        require('./game.directive.test')(ngModule);
+    }
+
     ngModule.directive('gameDirective', gameDirectiveFn);
     require('./game.directive.sass');
     function gameDirectiveFn() {
