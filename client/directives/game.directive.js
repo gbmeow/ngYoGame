@@ -3,7 +3,7 @@
  */
 module.exports = function(ngModule) {
     ngModule.directive('gameDirective', gameDirectiveFn);
-
+    require('./game.directive.sass');
     function gameDirectiveFn() {
         return {
             restrict: 'E',
